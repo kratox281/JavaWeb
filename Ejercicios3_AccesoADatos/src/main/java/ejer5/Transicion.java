@@ -4,6 +4,8 @@ package ejer5;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import org.apache.catalina.connector.Response;
+
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -76,7 +78,7 @@ public class Transicion extends HttpServlet {
 			Cookie c = new Cookie(libro, cantidad+"");
 			response.addCookie(c);
 		}
-		
+		//response.getWriter().append("Soy el post");
 	
 		doGet(request, response);
 	}

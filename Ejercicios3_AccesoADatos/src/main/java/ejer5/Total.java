@@ -51,10 +51,27 @@ public class Total extends HttpServlet {
 		
 		Cookie[] cs = request.getCookies();
 		for(Cookie c:cs) {
-			pw.println("<tr>");
-			pw.println("<td>"+c.getName()+"</td>");
-			pw.println("<td>"+c.getValue()+"</td>");
-			pw.println("<td>0</td>");
+		    String nombre = c.getName();
+		    int cantidad =Integer.parseInt(c.getValue());
+		    int precio=0;
+		    switch (nombre) {
+                case "Java":
+                    precio=cantidad*9;
+                    break;
+                case "C":
+                    precio=cantidad*2;
+                    break;
+                case "C++":
+                    precio=cantidad*1;
+                    break;
+                case "Python":
+                    precio=cantidad*10;
+                    break;     
+            }
+ 			pw.println("<tr>");
+			pw.println("<td>"+nombre+"</td>");
+			pw.println("<td>"+cantidad+"</td>");
+			pw.println("<td>"+precio+"</td>");
 			pw.println("</tr>");
 		}
 		pw.println("    </table>\r\n"
