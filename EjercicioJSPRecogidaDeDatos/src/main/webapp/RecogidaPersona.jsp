@@ -12,8 +12,8 @@
 <input type="text" name="dni" placeholder="dni">
 <input type="text" name="nombre" placeholder="nombre">
 <input type="text" name="apellidos" placeholder="apellidos">
-<input type="text" name="dirección" placeholder="dirección">
-<input type="text" name="teléfono" placeholder="teléfono">
+<input type="text" name="direccion" placeholder="dirección">
+<input type="text" name="telefono" placeholder="teléfono">
 <input type="text" name="correo" placeholder="correo">
 
 <input type="submit">

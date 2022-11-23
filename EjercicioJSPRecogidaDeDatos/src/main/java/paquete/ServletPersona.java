@@ -43,8 +43,8 @@ public class ServletPersona extends HttpServlet {
 		 dni  = request.getParameter("dni")!=null?request.getParameter("dni"):"";
 		 nombre = request.getParameter("nombre")!=null?request.getParameter("nombre"):"";
 		 apellidos = request.getParameter("apellidos")!=null?request.getParameter("apellidos"):"";
-		 direccion = request.getParameter("dirección")!=null?request.getParameter("dirección"):"";
-		 telefono = request.getParameter("teléfono")!=null?request.getParameter("teléfono"):"";
+		 direccion = request.getParameter("direccion")!=null?request.getParameter("direccion"):"";
+		 telefono = request.getParameter("telefono")!=null?request.getParameter("telefono"):"";
 		 correo = request.getParameter("correo")!=null?request.getParameter("correo"):"";
 		 Persona persona  = new Persona(dni, nombre, apellidos, direccion, telefono, correo);
 		 request.getServletContext().setAttribute("Persona", persona);
